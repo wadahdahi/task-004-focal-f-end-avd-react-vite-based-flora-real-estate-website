@@ -1,0 +1,224 @@
+#footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 35px 70px 24px 70px;
+  /* background-color: antiquewhite; */
+}
+#footer-upper {
+  display: flex;
+  flex-direction: row;
+}
+#footer-upper-first-side-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25.92px;
+  width: 350.59px;
+  align-items: start;
+  justify-content: start;
+}
+#footer-description {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  width: 100%;
+  align-items: start;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #22222280;
+}
+#footer-upper-second-side-wrapper {
+  display: flex;
+  flex-direction: row;
+  column-gap: 60px;
+  width: 100%;
+  margin-left: 60px;
+  align-items: start;
+  /* justify-content: space-between; */
+  /* background-color: aquamarine; */
+}
+#f-u-second-side-inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+#footer-list-heading {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  color: #222222;
+}
+#footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: start;
+  text-align: start;
+}
+#footer-list-item {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #222222;
+  text-align: start;
+}
+#footer-social-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+#footer-social-icon {
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin-top: 16px;
+}
+/* FOOTER HR */
+#footer-hr {
+  width: 100%;
+  margin: 35px auto 24px auto;
+  color: #2222221a;
+}
+/* FOOTER LOWER */
+#footer-lower-side-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#copyright {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #222222;
+}
+#legal-links {
+  display: flex;
+  flex-direction: row;
+  column-gap: 29.82px;
+  color: #222222;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+}
+
+/* -------------- */
+/* RESPONSIVENESS */
+/* -------------- */
+@media (max-width: 360px) {
+  #footer {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+    padding: 0px 20px 27px 20px;
+    /* background-color: antiquewhite; */
+  }
+  #footer-upper {
+    display: flex;
+    flex-direction: column;
+  }
+  #footer-upper-first-side-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25.92px;
+    width: 350.59px;
+    margin-bottom: 32px;
+    align-items: start;
+    justify-content: start;
+  }
+  #footer-description {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 100%;
+    align-items: start;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #22222280;
+  }
+  #footer-upper-second-side-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: start;
+    /* background-color: aquamarine; */
+  }
+  #f-u-second-side-inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  #footer-list-heading {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    color: #222222;
+  }
+  #footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+    align-items: start;
+    text-align: start;
+  }
+  #footer-list-item {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #222222;
+    align-items: start;
+    text-align: start;
+  }
+  #footer-social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+  /* FOOTER HR */
+  #footer-hr {
+    width: 100%;
+    margin: 35px auto 24px auto;
+    color: #2222221a;
+  }
+  /* FOOTER LOWER */
+  #footer-lower-side-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+    align-items: center;
+    text-align: start;
+  }
+
+  #copyright {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #222222;
+    align-items: start;
+  }
+  #legal-links {
+    display: flex;
+    flex-direction: row;
+    column-gap: 29.82px;
+    color: #222222;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    align-items: start;
+  }
+}

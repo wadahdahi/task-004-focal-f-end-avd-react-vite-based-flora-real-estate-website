@@ -1,0 +1,16 @@
+.nav-is-active {
+  color: rgb(226, 178, 119);
+}
+.nav-list-item {
+  color: #222222;
+}
+#nav-list {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  column-gap: 30px;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+}

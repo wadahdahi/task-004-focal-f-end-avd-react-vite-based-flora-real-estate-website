@@ -1,0 +1,190 @@
+#hero {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: auto;
+  align-items: start;
+  padding: 107.21px 0 145px 0px;
+  background-color: #eff8ff;
+  background-image: url(/public/images/backgrounds/modern-residential-building-transformed.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* --------------------- */
+#hero-panel {
+  display: flex;
+  flex-direction: row;
+  column-gap: 63.7px;
+  margin: 0 0 20px 70px;
+  position: relative;
+  align-items: center;
+  max-width: 100%;
+  padding: 21px 58px;
+  border-radius: 16px;
+  background-color: #ffffff80;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  animation: fadeEffect 1s forwards;
+}
+/* ----BLUR---- */
+
+/* ------------ */
+.hero-panel-part {
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  column-gap: 19.97px;
+}
+#hero-panel-icon {
+  display: block;
+  position: relative;
+  max-width: 59.9px;
+  max-height: 60px;
+}
+#hero-panel-icon-bg,
+#hero-panel-icon-itself {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#hero-panel-title-and-data {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+#hero-panel-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #16100d;
+}
+#hero-panel-data {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7c7774;
+}
+#hero-title {
+  display: block;
+  width: 549px;
+  margin: 0 0 20px 70px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 80px;
+  text-align: start;
+}
+#hero-description {
+  display: block;
+  margin: 0 0 50px 70px;
+  width: 423px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: start;
+  color: #16100d80;
+}
+/* ANIMATION */
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* -------------- */
+/* RESPONSIVENESS */
+/* -------------- */
+
+@media (max-width: 360px) {
+  #hero {
+    width: 100vw;
+    height: 740px;
+    padding: 107.21px 0 145px 0px;
+    background-color: #eff8ff;
+    background-image: url(/public/images/backgrounds/modern-residential-building-transformed.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: 140%;
+  }
+  /* --------------------- */
+  #hero-panel {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    width: 100vw;
+    margin: 0;
+    padding: 21px 58px;
+    border-radius: 0px;
+    align-items: start;
+    background-color: #ffffff80;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    animation: fadeEffect 1s forwards;
+  }
+  /* ----BLUR---- */
+
+  /* ------------ */
+  .hero-panel-part {
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 19.97px;
+  }
+  #hero-panel-icon {
+    display: block;
+    position: relative;
+    margin-right: 24px;
+    max-width: 59.9px;
+    max-height: 60px;
+  }
+  #hero-panel-icon-bg,
+  #hero-panel-icon-itself {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #hero-panel-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #16100d;
+  }
+  #hero-panel-data {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #7c7774;
+  }
+  #hero-panel-title-and-data {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  #hero-title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 0 20px 20px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 46px;
+    letter-spacing: 0%;
+
+    text-align: start;
+  }
+  #hero-description {
+    display: block;
+    margin: 0 0 35px 20px;
+    width: 294px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: start;
+  }
+}

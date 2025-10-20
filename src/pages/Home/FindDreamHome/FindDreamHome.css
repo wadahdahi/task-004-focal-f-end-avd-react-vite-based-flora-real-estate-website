@@ -1,0 +1,77 @@
+#find-dream-house-section {
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+  width: 100%;
+  height: 100%;
+  padding: 107px 380px;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-image: url(/public/images/backgrounds/dream-house.png);
+  background-color: #00000050;
+  background-blend-mode: darken;
+  animation: fadeEffect 2s forwards;
+}
+#find-dream-house-heading {
+  display: block;
+  margin: auto;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 56px;
+  text-align: center;
+  color: #ffffff;
+}
+#find-dream-house-description {
+  display: block;
+  margin: auto;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+}
+/* ANIMATION */
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 360px) {
+  #find-dream-house-section {
+    gap: 15px;
+    width: 100vw;
+    height: 380px;
+    padding: 133px 11px;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(/public/images/backgrounds/middle-background.png);
+    background-color: #00000080;
+    background-blend-mode: darken;
+    animation: fadeEffect 2s forwards;
+  }
+  #find-dream-house-heading {
+    display: block;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 56px;
+    text-align: start;
+    color: #ffffff;
+  }
+  #find-dream-house-description {
+    display: block;
+    width: 338.44px;
+    margin: auto;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+    color: #ffffff;
+  }
+}

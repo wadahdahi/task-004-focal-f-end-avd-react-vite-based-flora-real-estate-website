@@ -1,0 +1,46 @@
+#error-404-page {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 60px 0 0;
+  align-items: center;
+}
+#error-msg-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  gap: 20px;
+  margin: 0 20px;
+  padding: 40px 20px 30px;
+  justify-content: space-between;
+  border-radius: 12px;
+  border: 1px solid cornflowerblue;
+  background-color: rgb(243, 249, 255);
+}
+#error-404-page h1 {
+  display: block;
+  margin: 0 20px;
+  font-size: min(4em, 8vw);
+  color: cornflowerblue;
+}
+#error-404-page hr {
+  display: block;
+  width: 90%;
+  margin: 16px auto 34px auto;
+  color: rgb(15, 43, 94);
+}
+#error-404-page p {
+  display: block;
+  width: 100%;
+  font-size: min(1.2em, 8vw);
+}
+#error-404-page a {
+  text-decoration: underline;
+  color: cornflowerblue;
+}
+#error-404-page a:hover {
+  color: rgb(38, 106, 231);
+}

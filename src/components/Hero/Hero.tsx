@@ -1,4 +1,3 @@
-import "./HeroResponsive.css";
 import "./Hero.css";
 
 type HeroInfoPanelItem = {
@@ -10,20 +9,20 @@ type HeroInfoPanelItem = {
 
 const HeroInfoPanelData: HeroInfoPanelItem[] = [
   {
-    icon: "/public/images/icons/location.png",
-    iconBackground: "/public/images/icons/circle-shape-blue.png",
+    icon: "/images/icons/location.png",
+    iconBackground: "/images/icons/circle-shape-blue.png",
     title: "Location",
     data: "Ahmedabad, India",
   },
   {
-    icon: "/public/images/icons/dollar-circle.png",
-    iconBackground: "/public/images/icons/circle-shape-blue.png",
+    icon: "/images/icons/dollar-circle.png",
+    iconBackground: "/images/icons/circle-shape-blue.png",
     title: "Price",
     data: "$1000 - $10,000",
   },
   {
-    icon: "/public/images/icons/house.png",
-    iconBackground: "/public/images/icons/circle-shape-blue.png",
+    icon: "/images/icons/house.png",
+    iconBackground: "/images/icons/circle-shape-blue.png",
     title: "Type of Property",
     data: "Apartment",
   },

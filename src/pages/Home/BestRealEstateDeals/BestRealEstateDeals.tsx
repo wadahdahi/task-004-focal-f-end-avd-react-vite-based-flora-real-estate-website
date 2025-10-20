@@ -71,7 +71,7 @@ const BestRealEstateDeals = () => {
               <img id="deal-image" src={card.image} alt={card.sort} />
               <img
                 id="image-placeholder"
-                src="/public/images/misc/image-placeholder.png"
+                src="/images/misc/image-placeholder.png"
                 alt=""
                 height={"100px"}
               />

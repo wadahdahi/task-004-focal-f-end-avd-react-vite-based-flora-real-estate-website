@@ -59,31 +59,39 @@ const Header: React.FC<HeaderProps> = ({ id, logoShape, logoText }) => {
         </button>
       )}
 
-      <div id="side-nav" className={isMenuOpen ? "open" : ""}>
-        <div id="side-nav-header">
-          <div id="side-nav-logo">
-            <img
-              src={logoShape}
-              alt="logo-shape"
-              width={"40px"}
-              height="24px"
-            />
-            <img src={logoText} alt="logo-text" width={"55px"} height="17px" />
+      {isMenuOpen && (
+        <div id="side-nav" className="open">
+          <div id="side-nav-header">
+            <div id="side-nav-logo">
+              <img
+                src={logoShape}
+                alt="logo-shape"
+                width={"40px"}
+                height="24px"
+              />
+              <img
+                src={logoText}
+                alt="logo-text"
+                width={"55px"}
+                height="17px"
+              />
+            </div>
           </div>
-        </div>
 
-        <Navbar
-          id="mobile-nav"
-          links={[
-            { name: "Home", path: "/" },
-            { name: "About", path: "/about" },
-            { name: "Service", path: "/service" },
-            { name: "NewProperty", path: "/new-property" },
-            { name: "Contact", path: "/contact" },
-          ]}
-          onLinkClick={() => setIsMenuOpen(false)}
-        />
-      </div>
+          <Navbar
+            id="mobile-nav"
+            links={[
+              { name: "Home", path: "/" },
+              { name: "About", path: "/about" },
+              { name: "Service", path: "/service" },
+              { name: "NewProperty", path: "/new-property" },
+              { name: "Contact", path: "/contact" },
+            ]}
+            isSidebar={true}
+            onLinkClick={() => setIsMenuOpen(false)}
+          />
+        </div>
+      )}
     </header>
   );
 };

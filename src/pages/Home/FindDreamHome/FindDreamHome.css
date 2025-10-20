@@ -9,7 +9,7 @@
   align-items: center;
   background-position: center;
   background-size: cover;
-  background-image: url(/public/images/backgrounds/dream-house.png);
+  background-image: url(/images/backgrounds/dream-house.png);
   background-color: #00000050;
   background-blend-mode: darken;
   animation: fadeEffect 2s forwards;
@@ -50,7 +50,7 @@
     align-items: center;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(/public/images/backgrounds/middle-background.png);
+    background-image: url(/images/backgrounds/middle-background.png);
     background-color: #00000080;
     background-blend-mode: darken;
     animation: fadeEffect 2s forwards;

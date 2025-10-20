@@ -35,13 +35,13 @@ const FooterLinks: FooterLink[] = [
     ],
     socialLinks: [
       {
-        social: "/public/images/social-icons/facebook-icon.svg",
+        social: "/images/social-icons/facebook-icon.svg",
       },
       {
-        social: "/public/images/social-icons/x-twitter-icon.svg",
+        social: "/images/social-icons/x-twitter-icon.svg",
       },
       {
-        social: "/public/images/social-icons/linkedin-icon.svg",
+        social: "/images/social-icons/linkedin-icon.svg",
       },
     ],
   },

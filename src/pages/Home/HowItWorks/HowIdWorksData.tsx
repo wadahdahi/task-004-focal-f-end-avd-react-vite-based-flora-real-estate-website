@@ -2,9 +2,9 @@ import type { HowItWorksItem } from "./HowItWorks";
 
 const HowItWorksData: HowItWorksItem[] = [
   {
-    icon: "/public/images/icons/card-icon-01-search-apartment.png",
+    icon: "/images/icons/card-icon-01-search-apartment.png",
     iconHovered:
-      "/public/images/icons/card-icon-01-search-apartment-white-hovered.png",
+      "/images/icons/card-icon-01-search-apartment-white-hovered.png",
     iconWidth: "39.85px",
     iconHeight: "40px",
     iconAlt: "Search icon",
@@ -12,9 +12,9 @@ const HowItWorksData: HowItWorksItem[] = [
     data: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet tempus felis vitae.",
   },
   {
-    icon: "/public/images/icons/card-icon-02-select-apartment.png",
+    icon: "/images/icons/card-icon-02-select-apartment.png",
     iconHovered:
-      "/public/images/icons/card-icon-02-select-apartment-white-hovered.png",
+      "/images/icons/card-icon-02-select-apartment-white-hovered.png",
     iconWidth: "42px",
     iconHeight: "40px",
     iconAlt: "Select icon",
@@ -22,9 +22,9 @@ const HowItWorksData: HowItWorksItem[] = [
     data: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet tempus felis vitae.",
   },
   {
-    icon: "/public/images/icons/card-icon-03-confirm-apartment.png",
+    icon: "/images/icons/card-icon-03-confirm-apartment.png",
     iconHovered:
-      "/public/images/icons/card-icon-03-confirm-apartment-white-hovered.png",
+      "/images/icons/card-icon-03-confirm-apartment-white-hovered.png",
     iconWidth: "39.85px",
     iconHeight: "40px",
     iconAlt: "Confirm icon",

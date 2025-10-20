@@ -4,10 +4,16 @@ import "./Navbar.css";
 type NavbarProps = {
   id: string;
   links: { name: string; path: string }[];
-  onLinkClick?: () => void; // اختياري
+  isSidebar?: boolean;
+  onLinkClick?: () => void;
 };
 
-const Navbar: React.FC<NavbarProps> = ({ id, links, onLinkClick }) => {
+const Navbar: React.FC<NavbarProps> = ({
+  id,
+  links,
+  isSidebar,
+  onLinkClick,
+}) => {
   return (
     <nav id={id}>
       <ul id="nav-list">
@@ -16,9 +22,15 @@ const Navbar: React.FC<NavbarProps> = ({ id, links, onLinkClick }) => {
             <NavLink
               to={link.path}
               className={({ isActive }) =>
-                isActive ? "nav-is-active" : "nav-list-item"
+                isSidebar
+                  ? isActive
+                    ? "sidebar-link-active"
+                    : "sidebar-link"
+                  : isActive
+                  ? "nav-is-active"
+                  : "nav-list-item"
               }
-              onClick={onLinkClick} // هونيك تنادى عند النقر
+              onClick={onLinkClick}
             >
               {link.name}
             </NavLink>
@@ -28,6 +40,5 @@ const Navbar: React.FC<NavbarProps> = ({ id, links, onLinkClick }) => {
     </nav>
   );
 };
-
 
 export default Navbar;

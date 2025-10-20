@@ -9,15 +9,15 @@ function App() {
     <>
       <Header
         id="header"
-        logoShape="/public/images/logo/flora-logo-shape.svg"
-        logoText="/public/images/logo/flora-logo-text.svg"
+        logoShape="/images/logo/flora-logo-shape.svg"
+        logoText="/images/logo/flora-logo-text.svg"
       />
       <main>
         <Outlet />
       </main>
       <Footer
-        logoShape="/public/images/logo/flora-logo-shape.svg"
-        logoText="/public/images/logo/flora-logo-text.svg"
+        logoShape="/images/logo/flora-logo-shape.svg"
+        logoText="/images/logo/flora-logo-text.svg"
       />
     </>
   );

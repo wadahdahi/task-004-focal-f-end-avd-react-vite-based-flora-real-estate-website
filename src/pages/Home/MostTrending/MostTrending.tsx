@@ -32,7 +32,7 @@ const MostTrending = () => {
             </h3>
             <div id="location-wrapper">
               <img
-                src="/public/images/icons/location-icon.png"
+                src="/images/icons/location-icon.png"
                 alt="location"
                 width={"23.52px"}
                 height={"24px"}

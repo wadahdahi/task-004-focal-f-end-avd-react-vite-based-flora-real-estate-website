@@ -99,7 +99,7 @@
 /* RESPONSIVENESS */
 /* -------------- */
 
-@media (max-width: 360px) {
+@media (max-width: 412px) {
   #hero {
     width: 100vw;
     height: 740px;

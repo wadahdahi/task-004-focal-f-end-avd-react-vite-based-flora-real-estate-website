@@ -2,11 +2,21 @@
 .nav-is-active {
   color: rgb(226, 178, 119);
 }
+#nav-list {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  width: 100vw;
+  align-items: center;
+}
+
 .nav-list-item {
   color: #222222;
 }
 
-/* Sidebar Nav */
+/* -------------- */
+/* ---SIDE NAV--- */
+/* -------------- */
 .sidebar-link {
   display: block;
   color: #444444;
@@ -30,6 +40,12 @@
   background-color: #d7e6ea;
   align-items: start;
   text-align: start;
+}
+#nav-list li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  /* background-color: antiquewhite; */
 }
 #nav-list li a {
   display: block;

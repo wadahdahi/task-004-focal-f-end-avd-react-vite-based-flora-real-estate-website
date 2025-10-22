@@ -150,7 +150,7 @@
 /* RESPONSIVENESS */
 /* -------------- */
 
-@media (max-width: 360px) {
+@media (max-width: 412px) {
   #best-realestate-deals-section {
     display: flex;
     flex-direction: column;

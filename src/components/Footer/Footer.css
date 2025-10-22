@@ -111,7 +111,7 @@
 /* -------------- */
 /* RESPONSIVENESS */
 /* -------------- */
-@media (max-width: 360px) {
+@media (max-width: 412px) {
   #footer {
     display: flex;
     flex-direction: column;

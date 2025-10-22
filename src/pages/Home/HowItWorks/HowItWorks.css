@@ -101,7 +101,7 @@
 /* RESPONSIVENESS */
 /* -------------- */
 
-@media (max-width: 360px) {
+@media (max-width: 412px) {
   #how-it-works-section {
     display: flex;
     flex-direction: column;

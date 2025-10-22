@@ -14,20 +14,34 @@
 #hero-panel {
   display: flex;
   flex-direction: row;
+  position: relative;
   column-gap: 63.7px;
+  overflow: hidden;
   margin: 0 0 20px 70px;
   position: relative;
   align-items: center;
   max-width: 100%;
   padding: 21px 58px;
   border-radius: 16px;
-  background-color: #ffffff80;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
   animation: fadeEffect 1s forwards;
 }
 /* ----BLUR---- */
-
+#hero-panel-icon-bg {
+  border-radius: 50px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+#panel-blured-background {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #ffffff80;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
 /* ------------ */
 .hero-panel-part {
   z-index: 1;
@@ -36,6 +50,7 @@
   column-gap: 19.97px;
 }
 #hero-panel-icon {
+  z-index: 12;
   display: block;
   position: relative;
   max-width: 59.9px;
@@ -43,6 +58,7 @@
 }
 #hero-panel-icon-bg,
 #hero-panel-icon-itself {
+  z-index: 11;
   display: block;
   position: absolute;
   top: 50%;
@@ -52,6 +68,7 @@
 #hero-panel-title-and-data {
   display: flex;
   flex-direction: column;
+  margin-left: 20px;
   align-items: start;
 }
 #hero-panel-title {
@@ -103,7 +120,7 @@
   #hero {
     width: 100vw;
     height: 740px;
-    padding: 107.21px 0 145px 0px;
+    padding: 132px 0 145px 0px;
     background-color: #eff8ff;
     background-image: url(/images/backgrounds/modern-residential-building-transformed.png);
     background-repeat: no-repeat;
@@ -120,13 +137,20 @@
     padding: 21px 58px;
     border-radius: 0px;
     align-items: start;
-    background-color: #ffffff80;
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
     animation: fadeEffect 1s forwards;
   }
   /* ----BLUR---- */
-
+  #panel-blured-background {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #ffffff80;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
   /* ------------ */
   .hero-panel-part {
     z-index: 1;

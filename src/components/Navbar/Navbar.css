@@ -13,21 +13,23 @@
 #nav-list {
   display: flex;
   flex-direction: row;
-  gap: 32px;
-  width: fit-content;
-  align-items: center;
+  column-gap: 30px;
+  width: 100%;
+  align-items: start;
+  /* background-color: #025595; */
 }
 
 #nav-list li {
   display: block;
+  width: 100%;
   margin: 0;
   padding: 0;
+  gap: 32px;
   text-align: start;
 }
 #nav-list li a {
   display: block;
   width: 100%;
-  /* padding: 18px 0px 18px 20px; */
   text-align: start;
   font-weight: 500;
   font-size: 16px;
@@ -60,4 +62,14 @@
   background-color: #d7e6ea;
   align-items: start;
   text-align: start;
+}
+@media (max-width: 412px) {
+  #nav-list {
+    row-gap: 32px;
+  }
+  #nav-list li a {
+    padding: 24px 0 24px 20px;
+  }
+  #nav-list li {
+  }
 }

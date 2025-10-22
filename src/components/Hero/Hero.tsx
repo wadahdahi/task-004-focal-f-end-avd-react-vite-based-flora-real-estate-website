@@ -39,6 +39,7 @@ const Hero: React.FC = () => {
         tempus felis vitae sit est quisque.
       </p>
       <ul id="hero-panel">
+        <div id="panel-blured-background"></div>
         {HeroInfoPanelData.map((item: HeroInfoPanelItem, index) => (
           <li key={index} className="hero-panel-part">
             <div id="hero-panel-icon">

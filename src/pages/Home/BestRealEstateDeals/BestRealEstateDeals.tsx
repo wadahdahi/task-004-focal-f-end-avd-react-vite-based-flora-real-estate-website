@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import BestRealEstateDealsCardsData from "./BestRealEstateDealsCardsData";
 import handleCardClick from "../../../scripts/scripts";
 

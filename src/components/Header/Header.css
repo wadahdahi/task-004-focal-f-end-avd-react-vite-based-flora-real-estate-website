@@ -10,8 +10,21 @@
   justify-content: space-between;
   filter: drop-shadow(0px 0px 6px #02559560);
   background-color: #eff8ff;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
-
+/* --------------- */
+/* ---SHOW/HIDE--- */
+/* ---ON SCROLL--- */
+/* --------------- */
+.header.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+.header.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+/* ---LOGO------- */
 #logo {
   display: flex;
   flex-direction: column;

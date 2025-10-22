@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Navbar from "../Navbar/Navbar";
+import { createScrollHandler } from "./createScrollHandler";
 import "./Header.css";
 
 export type HeaderProps = {
@@ -10,9 +11,25 @@ export type HeaderProps = {
 
 const Header: React.FC<HeaderProps> = ({ id, logoShape, logoText }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [visible, setVisible] = useState(true);
+
+  const lastScroll = useRef<number>(window.scrollY);
+  const timeout = useRef<number | null>(null);
+  const ticking = useRef(false);
+
+  useEffect(() => {
+    const handler = createScrollHandler(
+      lastScroll,
+      timeout,
+      ticking,
+      setVisible
+    );
+    window.addEventListener("scroll", handler);
+    return () => window.removeEventListener("scroll", handler);
+  }, []);
 
   return (
-    <header id={id}>
+    <header id={id} className={`header ${visible ? "visible" : "hidden"}`}>
       <div id="logo">
         <img
           src={logoShape}

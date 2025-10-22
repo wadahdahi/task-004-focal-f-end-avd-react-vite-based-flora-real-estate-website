@@ -7,19 +7,19 @@ const About = () => {
       <div id="maintenance-msg-page-background-wrapper">
         <img
           id="maintenance-msg-page-background"
-          src="/public/images/backgrounds/construction-maintenance-background.png"
+          src="/images/backgrounds/construction-maintenance-background.png"
           alt=""
         />
       </div>
       <div id="maintenance-msg">
         <img
           id="maintenance-msg-box-background"
-          src="/public/images/backgrounds/grid-line-pattern-with-blue-texture-background.png"
+          src="/images/backgrounds/grid-line-pattern-with-blue-texture-background.png"
           alt=""
         />
         <img
           id="maintenance-msg-image"
-          src="/public/images/misc/construction-maintenance-image.png"
+          src="/images/misc/construction-maintenance-image.png"
           alt="construction maintenance"
           width={"120px"}
         />

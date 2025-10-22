@@ -42,9 +42,15 @@
   display: flex;
   flex-direction: column;
   padding: 20px 20px 22px 20px;
+  align-items: start;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 0px #0000001a;
   /* background-color: blueviolet; */
+}
+#most-trending-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 0px 10px 0px #0000003a;
+  transition: transform 0.2s ease-out;
 }
 #most-trending-card-image {
   display: block;
@@ -133,6 +139,9 @@
   #most-trending-card {
     display: flex;
     flex-direction: column;
+    max-width: 320px;
+    max-height: 380px;
+    margin: 0 auto;
     padding: 16px 16px 18.55px 16px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px #0000001a;
@@ -142,6 +151,7 @@
     display: block;
     width: 288px;
     height: 190px;
+    margin: 0;
     margin-bottom: 10px;
     border-radius: 6px;
   }
@@ -171,7 +181,7 @@
   #most-trending-card-location {
     display: block;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 20px;
     text-align: start;
     color: #222222;

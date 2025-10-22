@@ -88,6 +88,14 @@
   line-height: 24px;
 }
 /* ANIMATION */
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @keyframes fadeEffect {
   from {
     opacity: 0;
@@ -134,7 +142,7 @@
     row-gap: 20px;
     width: 100%;
     margin: 0 auto;
-    align-items: start;
+    align-items: center;
     justify-content: start;
   }
   #how-it-works-card {

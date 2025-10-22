@@ -80,11 +80,27 @@
 
 #best-realestate-deals-card {
   display: flex;
+  width: fit-content;
+  height: fit-content;
+  max-width: 387.8px;
+  max-height: 300px;
   position: relative;
   overflow: hidden;
   border-radius: 5px;
   opacity: 0;
   animation: fadeEffect 1s forwards;
+}
+#best-realestate-deals-card:hover {
+  transform: scale(1.01);
+  transition: transform 0.2s ease-out;
+}
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @-webkit-keyframes fadeEffect {
   from {
@@ -210,6 +226,8 @@
 
   #best-realestate-deals-card {
     display: flex;
+    /* width: 100%; */
+    margin: 0 auto;
     position: relative;
     overflow: hidden;
     border-radius: 5px;

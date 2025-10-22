@@ -1,5 +1,6 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import BestRealEstateDealsCardsData from "./BestRealEstateDealsCardsData";
+import handleCardClick from "../../../scripts/scripts";
 
 import "./BestRealEstateDeals.css";
 
@@ -32,6 +33,7 @@ type ControlTab = {
 const BestRealEstateDeals = () => {
   // FILTERING DEALS USING useState
   const [activeTab, setActiveTab] = useState("All");
+
   return (
     <section id="best-realestate-deals-section">
       <h2 id="best-realestate-deals-heading">Best Real Estate Deals</h2>
@@ -56,7 +58,11 @@ const BestRealEstateDeals = () => {
           {BestRealEstateDealsCardsData.filter(
             (card) => activeTab === "All" || card.sort === activeTab
           ).map((card, index) => (
-            <div key={index} id="best-realestate-deals-card">
+            <div
+              key={index}
+              id="best-realestate-deals-card"
+              onClick={handleCardClick}
+            >
               {card.image && (
                 <div id="info-boxes-wrapper">
                   <p className="info-box" id="is-featured">

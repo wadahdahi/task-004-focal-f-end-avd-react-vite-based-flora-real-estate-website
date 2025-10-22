@@ -1,4 +1,5 @@
 import MostTrendingData from "./MostTrendingData";
+import handleCardClick from "../../../scripts/scripts";
 import "./MostTrending.css";
 
 export type MostTrendingCard = {
@@ -19,7 +20,7 @@ const MostTrending = () => {
 
       <div id="most-trending-cards-wrapper">
         {MostTrendingData.map((card, index) => (
-          <div id="most-trending-card" key={index}>
+          <div id="most-trending-card" key={index} onClick={handleCardClick}>
             <img
               id="most-trending-card-image"
               src={card.image}

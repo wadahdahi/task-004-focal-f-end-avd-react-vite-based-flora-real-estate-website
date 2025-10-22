@@ -1,9 +1,10 @@
+import UnderMaintenancePage from "../Errors/UnderMaintenancePage/UnderMaintenancePage";
 import "./NewProperty.css";
 
 const NewProperty = () => {
   return (
     <>
-      <h2>New Property Page</h2>
+      <UnderMaintenancePage />
     </>
   );
 };

@@ -1,9 +1,10 @@
+import UnderMaintenancePage from "../Errors/UnderMaintenancePage/UnderMaintenancePage";
 import "./Contact.css";
 
 const Contact = () => {
   return (
     <>
-      <h2>Contact Page</h2>
+      <UnderMaintenancePage />
     </>
   );
 };

@@ -31,9 +31,9 @@ const HeroInfoPanelData: HeroInfoPanelItem[] = [
 const Hero: React.FC = () => {
   return (
     <section id="hero">
-      <h3 id="hero-title">
+      <h1 id="hero-title">
         Discover a place <span> you will love to live</span>
-      </h3>
+      </h1>
       <p id="hero-description">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet
         tempus felis vitae sit est quisque.

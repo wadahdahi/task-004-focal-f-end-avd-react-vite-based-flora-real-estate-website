@@ -17,7 +17,6 @@ const NotFoundPage: React.FC<NotFoundPageProps> = ({ id }) => {
           <i>
             <span>
               <Link to="/">here from Link</Link>
-              <a href="/">here</a>
             </span>
           </i>{" "}
           to go immediately to the Home page.

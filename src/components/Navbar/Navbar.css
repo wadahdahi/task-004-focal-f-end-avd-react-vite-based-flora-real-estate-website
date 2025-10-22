@@ -1,17 +1,37 @@
-/* Main Nav */
+/* -------------- */
+/* ---MAIN NAV--- */
+/* -------------- */
+
+/* THE NAVLINK CONDITION */
 .nav-is-active {
   color: rgb(226, 178, 119);
 }
+.nav-list-item {
+  color: #222222;
+}
+/* -------------- */
 #nav-list {
   display: flex;
   flex-direction: row;
   gap: 32px;
-  width: 100vw;
+  width: fit-content;
   align-items: center;
 }
 
-.nav-list-item {
-  color: #222222;
+#nav-list li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: start;
+}
+#nav-list li a {
+  display: block;
+  width: 100%;
+  /* padding: 18px 0px 18px 20px; */
+  text-align: start;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
 }
 
 /* -------------- */
@@ -40,18 +60,4 @@
   background-color: #d7e6ea;
   align-items: start;
   text-align: start;
-}
-#nav-list li {
-  display: block;
-  margin: 0;
-  padding: 0;
-  /* background-color: antiquewhite; */
-}
-#nav-list li a {
-  display: block;
-  width: 100vw;
-  padding: 18px 0px 18px 20px;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 64px;
 }

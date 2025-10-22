@@ -5,7 +5,7 @@ const HowItWorksData: HowItWorksItem[] = [
     icon: "/images/icons/card-icon-01-search-apartment.png",
     iconHovered:
       "/images/icons/card-icon-01-search-apartment-white-hovered.png",
-    iconWidth: "39.85px",
+    iconWidth: "40px",
     iconHeight: "40px",
     iconAlt: "Search icon",
     title: "Search Apartment",
@@ -15,7 +15,7 @@ const HowItWorksData: HowItWorksItem[] = [
     icon: "/images/icons/card-icon-02-select-apartment.png",
     iconHovered:
       "/images/icons/card-icon-02-select-apartment-white-hovered.png",
-    iconWidth: "42px",
+    iconWidth: "40px",
     iconHeight: "40px",
     iconAlt: "Select icon",
     title: "Select Apartment",
@@ -25,7 +25,7 @@ const HowItWorksData: HowItWorksItem[] = [
     icon: "/images/icons/card-icon-03-confirm-apartment.png",
     iconHovered:
       "/images/icons/card-icon-03-confirm-apartment-white-hovered.png",
-    iconWidth: "39.85px",
+    iconWidth: "40px",
     iconHeight: "40px",
     iconAlt: "Confirm icon",
     title: "Confirm Apartment",

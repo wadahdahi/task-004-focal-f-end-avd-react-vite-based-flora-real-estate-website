@@ -35,7 +35,7 @@ const HowItWorks = () => {
                 src={hoveredIndex === index ? item.iconHovered : item.icon}
                 alt={item.iconAlt}
                 width={item.iconWidth}
-                height={"auto"}
+                height={item.iconHeight}
               />
               <h3 id="how-it-works-card-title">{item.title}</h3>
               <p id="how-it-works-card-description">{item.data}</p>
